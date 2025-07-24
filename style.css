@@ -1,0 +1,103 @@
+@import url(https://fonts.googleapis.com/css2?family=Poppins%3Awght%40100%3B200%3B300%3B400%3B500%3B600&display=swap%27%29%3B);
+@import url(https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap);
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;  
+}
+
+::-webkit-scrollbar{
+    background-color: black;
+    filter: opacity(2005);
+
+}
+::-webkit-scrollbar-track{
+    border-radius: 3px;
+    background-color: transparent;
+}
+
+header{
+    
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    padding: 1rem 12%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.693) 70%);
+    filter:drop-shadow(10px);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+header .logo{
+    position: absolute;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 00;
+    font-family: 'Pixelify Sans', sans-serif;
+    font-style: italic;
+    left: 30px;
+    
+}
+
+header .logo span{
+    color: rgb(212, 134, 17);
+    font-weight: 600;
+}
+
+nav {
+    color: white;
+}
+
+nav a{
+    border: 10px solid transparent;
+    gap: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    align-content: center;
+    align-items: center;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(media/hero.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    font-family: 'Poppins';
+}
+
+.hero-content h1{
+    font-size: 6rem;
+    margin-bottom: 1rem;
+    border: 2px solid white;
+    font-weight: 1000px;
+    text-align: left;
+    line-height:89px;
+    right: 200px;
+    z-index: 20;
+    font-style: bold;
+    padding: 10px 20px;
+
+    
+}
