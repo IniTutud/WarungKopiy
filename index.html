@@ -1,116 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.6.0/uicons-brands/css/uicons-brands.css'>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000;1,1001;1,2000;&display=swap">
-  
-    <title>Kofisop</title>
-</head>
-<body>
-        <header>
-            <div class="logo">
-                <h1>kofisop<span>gacur.</span></h1>
-                </div>
-            <nav>
-                <div class="nav-links">
-                        <a href="#home">Home</a>
-                        <a href="#about">Tentang Kami</a>
-                        <a href="#menu">Menu</a>
-                        <a href="#contact">Kontak</a>
-                </div>
-                        <div class="search-bar">
-                            <i class="fa fa-search"></i></search>
-                        </div>
-                        <div class="shop-cart">
-                            <i class="fa fa-shopping-cart"></i>
-                        </nav>
-        </header>   
-        <section class="hero" id="home">
-            <div class="hero-content">
-                <h1>Mari Nikmati <br> Seember <span>Kupi.</span> </h1>
-                <p>NB : disini gaada wifinya Indihome 10mbps ya, pake kuota aja, <br>lagian internet kenceng buat apa</p>
-                <a href="#menu" class="btn">Order Sekarang</a>
-            </div> 
-        </section>
-        <section class="about" id="about">
-            <div class="about-image">
-                <img src="/media/about.jpg" alt="Coffee Shop">
-            </div>
-             <div class="about-text">
-                <h2>Tentang <span>Kami</span></h2>
-                <h1>Kopi kami pasti <br> Paling <span>Gacur</span></h1>
-                <p>Kopigacur lahir dari ide absurd: “Gimana kalau kita bikin tempat ngopi tapi konsepnya kayak warnet, tapi bukan warnet, tapi juga warnet, tapi tempat nggendgg, tapi enggak juga?”, Opo se no no.
-Dan voila, lahirlah tempat ini. Setiap ember kopi kami dibuat dengan setetes air mata laptop kami, sejumput krisis eksistensial, dan semangat hidup hari Senin (which is gaada)</p>
-           </div>
-        </section>
-        <section class="menu" id="menu">
-            <div class="menu-text">
-            <h1>Menu <span>Kami</span></h1>
-            <p>Berikut adalah beberapa pilihan kopi yang kami tawarkan. Setiap cangkir kopi kami dibuat dengan cinta dan dedikasi untuk memberikan pengalaman terbaik bagi Anda.</p>
-            </div>
-            <div class="menu-items">
-                <div class="menu-container">
-                <div class="menu-item">
-                    <img src="media/arabika.png" alt="Coffee 1">
-                    <h3>- Kopi Arabika -</h3>
-                    <p>IDR 99K</p>
-                </div>
-                <div class="menu-item">
-                    <img src="media/haha.png" alt="Coffee 2">
-                    <h3>- Kopi Robusta -</h3>
-                    <p>IDR 69K</p>
-                </div>
-                    
-            <div class="menu-item">
-                <img src="media/liberika.png" alt="Coffee 3">
-                <h3>- Kopi Liberika -</h3>
-                <p>IDR 57K</p>
-            </div>
-            <div class="menu-item">
-                <img src="media/ambarika.png" alt="Coffee 4">
-                <h3>- Kopi Ambarika -</h3>
-                <p>IDR 35K</p>
-            </div>
-            <div class="menu-item">
-                <img src="/media/jumbo.png" alt="Coffee 5">
-                <h3>- Esteh Jumbo -</h3>
-                <p>IDR 3K</p>
-            </div>
-            <div class="menu-item">
-                <img src="/media/iced.png" alt="Coffee 6">
-                <h3>- Iced Tea -</h3>
-                <p>IDR 39K</p>
-            </div>
-            </div>
-            </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+  <style>
+    :root {
+      --background: #000000;
+      --surface: #1e1e1e;
+      --header: #1f1b16;
 
-                <section class="contact" id="contact">
-                   
-                    <h1>Kontak Kami</h1>
-                    <p>Gausah Dihubungi, saya sudah kaya</p>
-                    <div class="row">
-                            <div class="maps">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d349.9098636969932!2d6.92711354244722!3d50.344280957862765!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47bfad1f9faa5837%3A0xe564a5e5605ae5f3!2sN%C3%BCrburgring%20Nordschleife%2C%2053518%20Quiddelbach%2C%20Jerman!5e1!3m2!1sid!2sid!4v1753373853560!5m2!1sid!2sid" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                   </div> 
-                <form method="post" class="form">
-                <input type="text" class="input" 
-                placeholder="Nama" id="nama">
-                <input type="text" class="input"
-                placeholder="Alamat Email" id="email">
-                <textarea class="textarea"
-                placeholder="No HP" id="pesan
-                "></textarea>
-                <submit type="submit" class="button">Kirim</submit>
-            
-            </form>   
-                </div>
-             </section>
-             <footer>
+      --text: #ffffff;
+      --text-secondary: #cccccc;
+
+      --primary: #f9a825;
+      --hover: #ffc107;
+      --dark: #ffb300;
+
+      --link: #ffffff;
+      --link-hover: #f9a825;
+      --link-active: #a1887f;
+
+      --button-bg: #f9a825;
+      --button-text: #121212;
+      --button-hover: #ffc107;
+    }
+
+    
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+      scroll-behavior: smooth;
+      font-size: 90%;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: var(--background);
+      color: var(--text);
+    }
+
+    p {
+      color: white;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--text);
+    }
+
+    ::-webkit-scrollbar{
+    background-color: rgba(0, 0, 0, 0);
+    filter: opacity(2005);
+
+}
+::-webkit-scrollbar-track{
+    border-radius: 3px;
+    background-color: transparent;
+}
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 6%;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.832) 80%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+    }
+
+    .navbar .logo {
+      color: var(--text);
+      font-size: 1.8rem;
+      font-weight: 800;
+      font-style: italic;
+    }
+
+    .navbar-nav a {
+      color: var(--text);
+      display: inline-block;
+      font-size: 1.2rem;
+      margin: 0 0.8rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-nav a:hover{
+    color: rgb(212, 134, 17);
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgb(212, 134, 17));
+    transition: all 0.3s ease-in-out;
+}
+
+    .navbar-nav a::after {
+      content: "";
+      display: block;
+      padding-bottom: 0.099rem;
+      border-bottom: 0.01rem solid var(--text);
+      background-color: var(--primary);
+      transform: scaleX(0);
+      transition: 0.3s linear;
+    }
+
+    .navbar-nav a:hover::after {
+      transform: scaleX(0.8);
+      transition: 0.3s linear;
+    }
+
+    .navbar-extra a {
+      font-size: 15px;
+      color: var(--text);
+      margin: 0 0.5rem;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .navbar-extra a:hover {
+      color: var(--primary);
+      filter: drop-shadow(0 0 5px var(--link-hover));
+      transition: all 0.3s ease-in-out;
+      transform: scale();
+    }
+
+    #menu {
+      display: none;
+    }
+
+    .home {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+
+    }
+
+    .home::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0)), url(media/hero3.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
+
+    .home::after {
+      content: "";
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 100%;
+      height: 30%;
+      background: linear-gradient(
+        0deg,
+        rgba(1, 1, 3, 1) 8%,
+        rgba(255, 255, 255, 0) 50%
+      );
+    }
+
+    .content {
+      max-width: 60rem;
+      padding: 1.4rem 7%;
+    }
+
+    .content h1 {
+      font-size: 7rem;
+      color: var(--text);
+      font-weight: 600;
+      text-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+      line-height: 86px;
+       filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.322));
+
+    }
+
+    .content h1 span{
+          color: rgb(212, 134, 17);
+    font-weight: 600;
+    filter: drop-shadow(0 0 10px rgba(212, 134, 17, 0.403));
+
+    }
+
+
+
+    .cta {
+      margin-top: 1rem;
+      display: inline-block;
+      padding: 1rem 3rem;
+      font-size: 1.4rem;
+      background-color: var(--button-bg);
+      border-radius: 0.5rem;
+      box-shadow: 1px 1px 3px rgba(1, 1, 3, 0.5);
+      z-index: 50;
+      transition: all 0.3s ease-in-out;
+
+    }
+
+    .content .cta:hover{
+    background-color: rgba(255, 255, 255, 0);
+    color: rgb(212, 134, 17);
+    transform: translateY(-5px);
+    box-shadow: 3px 5px 1px rgb(212, 134, 17);
+    border: 2px solid rgb(212, 134, 17);
+    transform: scaleY(1.2);
+    scaleX:(1.2);
+    filter: drop-shadow(0 0 10px rgb(212, 134, 17));
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+    .menus,
+    .contact {
+      padding: 10rem 7% 1.4rem;
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.805) 100%),linear-gradient(rgba(0, 0, 0, 0.762), rgba(0, 0, 0, 0)), url(media/bg.jpg);
+        
+      
+    }
+
+    /* .about .row 
+display: flex;   }
+
+    .about .row .content h3 {
+      font-size: 1.8rem;
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+
+   .row p {
+      margin-bottom: 0.8rem;
+      font-size: 1rem;
+      font-weight: 100;
+      line-height: 1.6;
+    
+    } */
+
+        .about .row {
+      display: flex;
+    }
+
+    .about .row .about-img {
+      flex: 1 1 45rem;
+    }
+
+    .about .row .about-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    .about .row .content {
+      flex: 1 1 35rem;
+      padding: 0 1rem;
+    }
+
+    .about .row .content h3 {
+      font-size: 1.8rem;
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+
+    .about .row .content p {
+      margin-bottom: 0.8rem;
+      font-size: 1.4rem;
+      font-weight: 100;
+      line-height: 1.6;
+    }
+
+
+
+    
+
+    .menus h2,
+    .contact h2, .about h2{
+        text-align: center;
+        font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .menus p,
+    .contact p, {
+      text-align: center;
+      max-width: 30rem;
+      margin: auto;
+      font-weight: 100;
+      line-height: 1.6;
+    }
+
+    .menus .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 5rem;
+      justify-content: center;
+    }
+
+    .menus-card {
+      text-align: center;
+      flex: 1 1 16rem;
+      margin: 1rem;
+  
+    }
+    .menus-card:hover {
+     
+        scale: 200px;
+        filter: drop-shadow(0 0 30px rgb(212, 134, 17));
+        transition: all 0.3s ease-in-out;
+        animation: button 0.4s ease-in-out infinite;
+        cursor: pointer;
+    }
+    
+     @keyframes button {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+    
+
+    .menus-card img {
+      width: 16rem;
+      height: 16rem;
+      object-fit: cover;
+    }
+
+    .menus-card-title {
+      font-size: 1.3rem;
+      margin: 1.5rem auto 0.5rem;
+    }
+
+    .menus .row .menus-card-price {
+      font-size: 1rem;
+      margin: 1rem auto 0.5rem;
+    }
+
+    .contact .row {
+      display: flex;
+      margin-top: 2rem;
+      background-color: var(--surface);
+      flex-wrap: wrap;
+    }
+
+    .contact .row .map {
+      flex: 1 1 45rem;
+      width: 100%;
+      object-fit: cover;
+    }
+
+    .contact .row form {
+      flex: 1 1 45rem;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .contact .row form .input-group {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+      background-color: var(--background);
+      border: 1px solid var(--text-secondary);
+    }
+
+    .contact .row form .input-group input {
+      width: 100%;
+      padding: 2rem;
+      background: none;
+      color: var(--text);
+      font-size: 1rem;
+    }
+
+    .contact .row form .input-group i {
+      width: 16%;
+      font-size: 1rem;
+      background: none;
+    }
+
+    .contact .row form .btn {
+      margin-top: 3rem;
+      padding: 1rem 3rem;
+      font-size: 1.7rem;
+      background-color: var(--primary);
+      display: inline-block;
+    }
+
+    @media (max-width: 1366px) {
+      html {
+        font-size: 75%;
+      }
+    }
+
+    @media (max-width: 757px) {
+      html {
+        font-size: 64.5%;
+      }
+      #menu {
+        display: inline-block;
+      }
+
+      .navbar-nav {
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        background-color: #1e1e1e;
+        width: 30rem;
+        height: 100vh;
+        transition: 0.3s ease-in-out;
+      }
+
+      .navbar-nav.active {
+        right: -20%;
+      }
+
+      .navbar-nav a {
+        display: block;
+        padding: 1rem 2rem;
+        color: var(--text);
+      }
+
+      .navbar-nav a:hover {
+        color: rgb(255, 226, 185);
+      }
+
+      .navbar-nav a::after {
+        transform-origin: 0 0;
+        background-color: rgb(255, 226, 185);
+      }
+
+      .navbar-nav a:hover:after {
+        transform: scaleX(0.4);
+      }
+
+      .about .row {
+        flex-wrap: wrap;
+      }
+
+      .about .row .about-img img {
+        height: 24rem;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .about .row .content {
+        padding: 0;
+      }
+
+      .about .row .content h3 {
+        font-size: 2rem;
+      }
+    }
+
+    .about .row .content p {
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 450px) {
+      html {
+        font-size: 55%;
+      }
+    }
+
+    @media (max-width: 230px) {
+      html {
+        font-size: 42.5%;
+      }
+    }
+
+    footer{
+    position: relative;
+    width: 100%;
+    height: 130px;
+    background:linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    margin: 0;
+    font-size: 14px;
+}
+
+footer p {
+   color: rgb(212, 134, 17);
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+footer h2 span{
+    color: rgb(212, 134, 17);
+    font-weight: 600;
+}   
+footer h2{
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-style: italic;
+}   
+footer a{
+    color: rgb(212, 134, 17);
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
+  </style>
+  <body>
+    <nav class="navbar">
+      <a href="#" class="logo"> 
+        kopisop <span style="color: rgb(212, 134, 17)">gacur.</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menus">Menu</a>
+        <a href="#contact">Kontak</a>
+      </div>
+      <div class="navbar-extra">
+        <a href="#" id="search" f
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></a>
+        <a href="#" id="shopping" f
+          ><i class="fa-solid fa-cart-shopping"></i
+        ></a>
+        <a href="#" id="menu" f><i class="fa-solid fa-bars" id="bars"></i></a>
+      </div>
+    </nav>
+    <section class="home" id="home">
+      <main class="content">
+        <h1 style="color: #ffffff">
+          <b>Mari Nikmati Seember</b><span> <b style="color: #f2ad35">Kupi.</span>
+        </h1>
+               <p style="margin-bottom: 20px; font-size: 1rem;">
+NB : disini gaada wifinya Indihome 10mbps ya, pake kuota aja, <br>lagian internet kenceng buat apa</p>
+        <a href="#" class="cta">Beli Sekarang</a>
+      </main>
+    </section>
+    <section id="about" class="about">
+      <h2>Tentang <span>Kami</span></h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="media/about.png" alt="" />
+        </div>
+        <div class="content">
+          <h3>Mengapa Kopigacur?</h3>
+          <div class="konten">             
+          <p>Kopigacur lahir dari ide absurd: “Gimana kalau kita bikin tempat ngopi tapi konsepnya kayak warnet, tapi bukan warnet, tapi juga warnet, tapi tempat nggendgg, tapi enggak juga?”, Opo se no no.
+Dan voila, lahirlah tempat ini. Setiap ember kopi kami dibuat dengan setetes air mata laptop kami, sejumput krisis eksistensial, dan semangat hidup hari Senin (which is gaada).</p>
+  
+</div>   
+        </div>
+      </div>
+    </section>
+    <section id="menus" class="menus">
+      <h2>Menu <span>Kami</span></h2>
+      <p style="text-align: center; margin-bottom: 20px; font-size: 1.6rem;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        mollitia molestias Lorem ipsum dolor sit amet consectetur adipisicing
+        elit.
+      </p>
+
+      <div class="row">
+        <div class="menus-card">
+         <img src="media/arabika.png" alt="Coffee 1">
+          <h3 class="menus-card-title">- Kopi Arabika -</h3>
+          <p class="menus-card-price">IDR 99k</p>
+        </div>
+        <div class="menus-card">
+          <img src="media/haha.png" alt="Coffee 2">
+          <h3 class="menus-card-title">- Kopi Robusta -</h3>
+          <p class="menus-card-price">IDR 69k</p>
+        </div>
+        <div class="menus-card">
+          <img src="media/liberika.png" alt="Coffee 3">
+          <h3 class="menus-card-title">- Kopi Liberika -</h3>
+          <p class="menus-card-price">IDR 120k</p>
+        </div>
+        <div class="menus-card">
+          <<img src="media/ambarika.png" alt="Coffee 4">
+          <h3 class="menus-card-title">- Kopi Ambarika -</h3>
+          <p class="menus-card-price">IDR 150k</p>
+        </div>
+        <div class="menus-card">
+          <img src="/media/jumbo.png" alt="Coffee 5">
+          <h3 class="menus-card-title">- Es Teh Jumbo -</h3>
+          <p class="menus-card-price">IDR 3k</p>
+        </div>
+        <div class="menus-card">
+          <img src="/media/iced.png" alt="Coffee 6">
+          <h3 class="menus-card-title">- Iced Tea -</h3>
+          <p class="menus-card-price">IDR 69k</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Kontak <span>Kami</span></h2>
+      <p style="text-align: center; margin-bottom: 20px; font-size: 1.6rem;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
+        mollitia molestas.
+      </p>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d946.8459894220953!2d112.73355172438622!3d-7.305518917029628!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd7fb00499f39b1%3A0x48b33cac7c139972!2sMarkas%20Badan%20Pengawas%20Jawir%20SMEAS!5e1!3m2!1sid!2sid!4v1753371999788!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+        <form action="">
+          <div class="input-group">
+            <i class="fa-regular fa-user"></i>
+            <input type="text" placeholder="Nama" />
+          </div>
+          <div class="input-group">
+            <i class="fa-regular fa-envelope"></i>
+            <input type="text" placeholder="E-mail" />
+          </div>
+          <div class="input-group">
+            <i class="fa-solid fa-phone"></i>
+            <input type="text" placeholder="Phone Number" />
+          </div>
+          <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+      </div>
+    </section>
+     <footer>
                 <div class="footer-content">
                     <h2>kofisop<span>gacur.</span></h2>
                     <p>&copy; 2025 Kofisop<span>gacur.</span> All rights reserved.</p>
@@ -121,17 +656,19 @@ Dan voila, lahirlah tempat ini. Setiap ember kopi kami dibuat dengan setetes air
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
+  </body>
+  <script>
+    const navbarnav = document.querySelector(".navbar-nav");
+    document.querySelector("#menu").onclick = () => {
+      navbarnav.classList.toggle("active");
+    };
 
+    const menu = document.querySelector("#menu");
 
-
-
-
-
-
-
-
-
-             </footer>
-
-                        </body>
+    document.addEventListener("click", function (e) {
+      if (!menu.contains(e.target) && !navbarnav.contains(e.target)) {
+        navbarnav.classList.remove("active");
+      }
+    });
+  </script>
 </html>
