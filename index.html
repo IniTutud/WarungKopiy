@@ -12,6 +12,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <style>
     :root {
@@ -103,7 +105,15 @@
     transform: scale(1.2);
     filter: drop-shadow(0 0 10px rgb(212, 134, 17));
     transition: all 0.3s ease-in-out;
+
+    
 }
+
+  .navbar-nav a:hover{
+    color: rgb(212, 134, 17);
+    transform: scale(1.2);
+    filter: drop-shadow(0 0 10px rgb(212, 134, 17));
+    transition: all 0.3s ease-in-out;}
 
     .navbar-nav a::after {
       content: "";
@@ -222,7 +232,7 @@
     box-shadow: 3px 5px 1px rgb(212, 134, 17);
     border: 2px solid rgb(212, 134, 17);
     transform: scaleY(1.2);
-    scaleX:(1.2);
+    transform: scaleX(1.2);
     filter: drop-shadow(0 0 10px rgb(212, 134, 17));
     transition: all 0.3s ease-in-out;
 }
@@ -299,13 +309,14 @@ display: flex;   }
     }
 
     .menus p,
-    .contact p, {
+    .contact p {
       text-align: center;
       max-width: 30rem;
       margin: auto;
       font-weight: 100;
       line-height: 1.6;
-    }
+  }
+    
 
     .menus .row {
       display: flex;
@@ -318,6 +329,7 @@ display: flex;   }
       text-align: center;
       flex: 1 1 16rem;
       margin: 1rem;
+      transition: all 0.3s ease-in-out;
   
     }
     .menus-card:hover {
@@ -344,6 +356,7 @@ display: flex;   }
       width: 16rem;
       height: 16rem;
       object-fit: cover;
+      transition: all 0.3s ease-in-out;
     }
 
     .menus-card-title {
@@ -558,12 +571,14 @@ NB : disini gaada wifinya Indihome 10mbps ya, pake kuota aja, <br>lagian interne
       </main>
     </section>
     <section id="about" class="about">
+     <div class="title" data-aos="fade-down">
       <h2>Tentang <span>Kami</span></h2>
+      </div>
       <div class="row">
         <div class="about-img">
-          <img src="media/about.png" alt="" />
+          <img src="media/about.png" alt="" data-aos="flip-up">
         </div>
-        <div class="content">
+        <div class="content" data-aos="fade-left">
           <h3>Mengapa Kopigacur?</h3>
           <div class="konten">             
           <p>Kopigacur lahir dari ide absurd: “Gimana kalau kita bikin tempat ngopi tapi konsepnya kayak warnet, tapi bukan warnet, tapi juga warnet, tapi tempat nggendgg, tapi enggak juga?”, Opo se no no.
@@ -575,39 +590,37 @@ Dan voila, lahirlah tempat ini. Setiap ember kopi kami dibuat dengan setetes air
     </section>
     <section id="menus" class="menus">
       <h2>Menu <span>Kami</span></h2>
-      <p style="text-align: center; margin-bottom: 20px; font-size: 1.6rem;">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        mollitia molestias Lorem ipsum dolor sit amet consectetur adipisicing
-        elit.
+      <p style="text-align: center; margin-bottom: 20px; font-size: 1.2rem;">
+       Berikut adalah menu menu gacur racikan kami
       </p>
 
       <div class="row">
-        <div class="menus-card">
+        <div class="menus-card" data-aos="fade-up-right">
          <img src="media/arabika.png" alt="Coffee 1">
           <h3 class="menus-card-title">- Kopi Arabika -</h3>
           <p class="menus-card-price">IDR 99k</p>
         </div>
-        <div class="menus-card">
+        <div class="menus-card" data-aos="fade-up-right">
           <img src="media/haha.png" alt="Coffee 2">
           <h3 class="menus-card-title">- Kopi Robusta -</h3>
           <p class="menus-card-price">IDR 69k</p>
         </div>
-        <div class="menus-card">
+        <div class="menus-card" data-aos="fade-up-left">
           <img src="media/liberika.png" alt="Coffee 3">
           <h3 class="menus-card-title">- Kopi Liberika -</h3>
           <p class="menus-card-price">IDR 120k</p>
         </div>
-        <div class="menus-card">
-          <<img src="media/ambarika.png" alt="Coffee 4">
+        <div class="menus-card" data-aos="fade-up-left">
+          <img src="media/ambarika.png" alt="Coffee 4">
           <h3 class="menus-card-title">- Kopi Ambarika -</h3>
           <p class="menus-card-price">IDR 150k</p>
         </div>
-        <div class="menus-card">
+        <div class="menus-card" data-aos="fade-up">
           <img src="/media/jumbo.png" alt="Coffee 5">
           <h3 class="menus-card-title">- Es Teh Jumbo -</h3>
           <p class="menus-card-price">IDR 3k</p>
         </div>
-        <div class="menus-card">
+        <div class="menus-card" data-aos="fade-up">
           <img src="/media/iced.png" alt="Coffee 6">
           <h3 class="menus-card-title">- Iced Tea -</h3>
           <p class="menus-card-price">IDR 69k</p>
@@ -616,9 +629,8 @@ Dan voila, lahirlah tempat ini. Setiap ember kopi kami dibuat dengan setetes air
     </section>
     <section id="contact" class="contact">
       <h2>Kontak <span>Kami</span></h2>
-      <p style="text-align: center; margin-bottom: 20px; font-size: 1.6rem;">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-        mollitia molestas.
+      <p style="text-align: center; margin-bottom: 20px; font-size: 1.3rem;">
+        Anda bisa menghubungi kami melalui form dibawah ini atau  datang langsung ke tempat kami (gausah si, kita uda kaya)
       </p>
       <div class="row">
         <iframe
@@ -656,6 +668,11 @@ Dan voila, lahirlah tempat ini. Setiap ember kopi kami dibuat dengan setetes air
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
+
+                  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                <script>
+                  AOS.init();
+                </script>
   </body>
   <script>
     const navbarnav = document.querySelector(".navbar-nav");
@@ -670,5 +687,70 @@ Dan voila, lahirlah tempat ini. Setiap ember kopi kami dibuat dengan setetes air
         navbarnav.classList.remove("active");
       }
     });
+
+    navLinks = document.querySelectorAll('navbar-nav a');
+const sections = document.querySelectorAll('section');
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', (e) => {bar
+    const activeLink = document.querySelector('navbar-nav a.active');
+    if (activeLink) {
+      activeLink.classList.remove('active');
+    }
+    link.classList.add('active');
+  });
+});
+
+window.addEventListener('scroll', () => {
+  const scrollPosition = window.scrollY;
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      const activeLink = document.querySelector('navbar-nav a.active');
+      if (activeLink) {
+        activeLink.classList.remove('active');
+      }
+      const link = document.querySelector(`navbar-nav a[href="#${section.id}"]`);
+      link.classList.add('active');
+    }
+  });
+});
+
+const navbarnav = document.querySelector(".navbar-nav");
+  document.querySelector("#menu").onclick = () => {
+    navbarnav.classList.toggle("active");
+  };
+
+  const menu = document.querySelector("#menu");
+
+  document.addEventListener("click", function (e) {
+    if (!menu.contains(e.target) && !navbarnav.contains(e.target)) {
+      navbarnav.classList.remove("active");
+    }
+  });
+
+  // Active class on scroll
+  const navLinks = document.querySelectorAll('.navbar-nav a');
+  const sections = document.querySelectorAll('section');
+
+  window.addEventListener('scroll', () => {
+    let currentSectionId = '';
+
+    sections.forEach((section) => {
+      const sectionTop = section.offsetTop - 100;
+      const sectionHeight = section.offsetHeight;
+      if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
+        currentSectionId = section.getAttribute('id');
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove('active');
+      if (link.getAttribute('href').includes(currentSectionId)) {
+        link.classList.add('active');
+      }
+    });
+  });
   </script>
 </html>
